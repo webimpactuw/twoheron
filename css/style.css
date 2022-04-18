@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+* {
+    font-family: 'Source Sans Pro';
+}
+
+h1, h2, h3, h4 {
+    font-style: normal;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 88px;
+    line-height: 111px;
+}
+
+h2, h3, h4 {
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+h2 {
+    font-size: 56px;
+    line-height: 70px;
+}
+
+h3 {
+    font-size: 32px;
+    line-height: 40px;
+}
+
+h4 {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+h5 {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+h6 {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: #D6A99A61;
+    color: black; 
+}
+
+nav li {
+    display: inline;
+}
+
+.header-left {
+    text-align: left;
+}
+
+.header-right {
+    text-align: right;
+}
+
+footer {
+    background-color: #D6A99A59;
+    color: black;
+}
