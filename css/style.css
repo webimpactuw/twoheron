@@ -67,16 +67,13 @@ nav {
     z-index: 100;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 0;
-    margin-bottom: 50px !important;
-}
-
 nav li {
     display: inline;
+}
+
+nav a {
+    padding: 0 1rem;
+    text-decoration: none;
 }
 
 .header-left {
@@ -85,6 +82,7 @@ nav li {
 
 .header-right {
     text-align: right;
+    padding-right: 6rem;
 }
 
 footer {
