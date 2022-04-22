@@ -1,0 +1,67 @@
+@import "style.css";
+
+#welcome {
+    position: static;
+    width: 77px;
+    height: 20px;
+    left: 0px;
+    top: 0px;
+}
+
+#title {
+    position: static;
+    top: 0px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0 6rem;
+}
+
+#slogan {
+    position: static;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 15px 0px;   
+}
+
+.right-header {
+    text-align: right;
+}
+
+.flex1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white !important;
+}
+
+.flex1 .image {
+    flex-grow: 2;
+}
+
+.flex1 .item {
+    text-align: center;
+    inline-size: 30%;
+    flex-grow: 1;
+}
+
+#quote {
+    height:375px;
+    text-align: justify;
+}
+
+.flex2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+
+.flex2 .image {
+    flex-grow: 2;
+}
+
+.flex2 .item {
+    flex-grow: 1;
+}
