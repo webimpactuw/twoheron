@@ -12,13 +12,12 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: 88px;
     line-height: 111px;
+    font-size: 88px;
 }
 
 h2, h3, h4 {
     letter-spacing: 0em;
-    text-align: left;
 }
 
 h2 {
@@ -95,7 +94,13 @@ footer {
     height: 679px;
 }
 
-#triangle-topleft {
+.title {
+    position: static;
+    top: 0px;
+    margin: 0 6rem;
+}
+
+.triangle-topleft {
     position: absolute;
     height: 800px;
     width: 453px;
