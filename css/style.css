@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&family=Nanum+Gothic:wght@400;800&family=Source+Sans+Pro:wght@300;400;600&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -52,11 +55,28 @@ h6 {
     line-height: 20px;
 }
 
+.centered-header {
+    text-align: center;
+}
+
+.right-header {
+    text-align: right;
+}
+
 nav {
-    position: fixed;
     width: 100%;
+    height: 10%;
     background-color: #D6A99A61;
     color: black; 
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 50px !important;
 }
 
 nav li {
@@ -75,3 +95,32 @@ footer {
     background-color: #D6A99A59;
     color: black;
 }
+
+.header {
+    height: 679px;
+}
+
+#triangle-topleft {
+    position: absolute;
+    height: 800px;
+    width: 453px;
+    left: 0.5px;
+    top: 1px;
+    clip-path: polygon(0% 0, 100% 0%, 0% 100%);
+    background-color:#D6A99A8F;
+    z-index: -100;
+    overflow:clip;
+}
+
+
+.button {
+    background-color: #8C8C8C; 
+    border: none;
+    color: white;
+    padding: 11px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+  }

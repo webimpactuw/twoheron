@@ -1,7 +1,7 @@
 @import "style.css";
 
 #welcome {
-    position: absolute;
+    position: static;
     width: 77px;
     height: 20px;
     left: 0px;
@@ -10,22 +10,15 @@
 
 #title {
     position: static;
-    width: 863px;
-    height: 111px;
-    left: 200px;
     top: 0px;
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 15px 0px;
+    margin: 0 6rem;
 }
 
 #slogan {
     position: static;
-    width: 453px;
-    height: 20px;
-    left: 0px;
-    top: 126px;
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -48,7 +41,14 @@
 }
 
 .flex1 .item {
+    text-align: center;
+    inline-size: 30%;
     flex-grow: 1;
+}
+
+#quote {
+    height:375px;
+    text-align: justify;
 }
 
 .flex2 {
