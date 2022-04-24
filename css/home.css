@@ -1,0 +1,47 @@
+@import "style.css";
+
+.right-header {
+    text-align: right;
+}
+
+.flex1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white !important;
+}
+
+.flex1 .image {
+    flex-grow: 2;
+    margin: 0 3rem;
+}
+
+.flex1 .item {
+    text-align: center;
+    inline-size: 30%;
+    flex-grow: 1;
+    margin: 0 3rem;
+}
+
+#quote {
+    margin: 12rem 0;
+    text-align: center;
+}
+
+.flex2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+
+.flex2 .image {
+    flex-grow: 2;
+}
+
+.flex2 .item {
+    text-align: center;
+    inline-size: 30%;
+    flex-grow: 1;
+    margin: 0 3rem;
+}
