@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/home.css">
     <title>Contact Us</title>
 </head>
 <body>
@@ -16,20 +16,33 @@
     <div>
         <h1>Contact Us</h1>
     </div>
-    <div class="row">
-        <div class="column">
-            <h2>Get in Touch With Us</h2>
+    <div class="form-group row">
+        <label for="emailInput" class="col-lg-1">Email</label>
+        <div class="col-lg-11">
+          <input type="email" id="emailInput" class="form-control" required>
         </div>
-        <div class="column">
-            <form> Name: <br>
-             <input type="text"> 
-            </form>
+      </div>
+      <div class="form-group row">
+        <label for="passwordInput" class="col-lg-1">Password</label>
+        <div class="col-lg-11">
+          <input type="password" id="passwordInput" class="form-control" minLength=6 required>
         </div>
-    </div>
+      </div>
+      <div class="form-group row">
+        <label for="passwordConfirmInput" class="col-lg-1">Confirm Password</label>
+        <div class="col-lg-11">
+          <input type="password" id="passwordConfirmInput" class="form-control" required>
+          <div id="passwordConfirmFeedback" class="invalid-feedback"></div>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="dobInput" class="col-lg-1">Date of Birth</label>
+        <div class="col-lg-11">
+          <input type="date" id="dobInput" class="form-control" required>
+          <div id="dobFeedback" class="invalid-feedback"></div>
+        </div>
+      </div>
+  
+      <button type="submit" class="btn btn-primary">Sign me up!</button>
+    </form>
 </body>
-=======
-<html>
-    <p>Hello Everyone!</p>
-    <P>hhhh</P>
->>>>>>> c0bd67e68ae4fa5506ed5ea446c27fe10cfa9c1f
-</html>

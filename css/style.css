@@ -74,6 +74,11 @@ nav li {
 nav a {
     padding: 0 1rem;
     text-decoration: none;
+    color: black;
+}
+
+.test {
+    background-color: #D6A99A61;
 }
 
 .header-left {
@@ -88,10 +93,6 @@ nav a {
 footer {
     background-color: #D6A99A59;
     color: black;
-}
-
-.header {
-    height: 679px;
 }
 
 .title {
