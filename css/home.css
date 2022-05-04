@@ -13,16 +13,18 @@
 
 .flex1 .image {
     flex-grow: 2;
+    margin: 0 3rem;
 }
 
 .flex1 .item {
     text-align: center;
     inline-size: 30%;
     flex-grow: 1;
+    margin: 0 3rem;
 }
 
 #quote {
-    height: 6rem;
+    margin: 12rem 0;
     text-align: center;
 }
 
@@ -34,9 +36,65 @@
 }
 
 .flex2 .image {
-    flex-grow: 2;
+    flex: 1 1 40%;
+}
+
+.flex2 .image img {
+    display: block;
+    height: auto; /* maintain aspect ratio*/
+    margin: auto; /*optional centering of image*/
+    width: 20%; /*divide 100 by the number of photos*/
+    float: left;
 }
 
 .flex2 .item {
-    flex-grow: 1;
+    flex: 1 1 40%;
+    height: 30rem;
+    text-align: left;
+    inline-size: 30%;
+    margin: 0 3rem;
+}
+
+.slider {
+    overflow: hidden;
+}
+
+.slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite; /*how long the whole thing takes*/
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+
 }

@@ -1,0 +1,33 @@
+@import "style.css";
+
+.environment {
+    display: flex;
+    margin: 0 3rem;
+    margin-top: 0 5rem;
+}
+
+.environment .text{
+    text-align: left;
+    inline-size: 30%;
+    flex-grow: 1;
+    margin: 0 3rem;
+}
+
+.grantees {
+    display: flex;
+    margin: 0 3rem;
+    margin-top: 0 3rem;
+}
+
+.grantees .text{
+    text-align: center;
+    inline-size: 30%;
+    flex-grow: 1;
+    margin: 0 3rem;
+}
+
+.carousel {
+    display: flex;
+    margin: 0 3rem;
+    margin-top: 0 5rem;
+}
