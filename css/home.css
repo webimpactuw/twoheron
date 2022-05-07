@@ -36,6 +36,20 @@
     float: center;
 }
 
+.quote{
+    position:relative;
+}
+
+.icon{
+    position:absolute;
+    top:-50%;
+    left:50%;
+}
+
+.fa-quote-left{
+    color:black;
+}
+
 #quote {
     margin: 12rem 0;
     text-align: center;
