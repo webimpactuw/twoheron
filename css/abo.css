@@ -43,3 +43,31 @@ p {
     font-style: italic;
 }
 
+.flexbox {
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 4rem;
+}
+
+.flexbox .image {
+    width:30%;
+    flex: 1 1 1;
+    margin-left: 6rem;
+
+}
+
+.flexbox .item {
+    inline-size: 60%;
+    flex-grow: 1;
+    margin-right: 6rem;
+    margin-left: 4rem;
+}
+
+.flexbox .item h3 {
+    text-align: center;
+}
+
+.flexbox .item p {
+    text-align: left;
+}
