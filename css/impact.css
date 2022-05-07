@@ -2,8 +2,6 @@
 
 .environment {
     display: flex;
-    margin: 0 3rem;
-    margin-top: 0 5rem;
 }
 
 .environment .text{
@@ -11,6 +9,10 @@
     inline-size: 30%;
     flex-grow: 1;
     margin: 0 3rem;
+}
+
+.environment .image{
+  width:50%;
 }
 
 .grantees {
