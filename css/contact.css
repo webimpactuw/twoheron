@@ -5,6 +5,7 @@
     width:100%;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     flex-direction: row;
 }
 
@@ -17,7 +18,7 @@
 .flex-form {
     width:50%;
     flex:1 1 1;
-    margin-top: 6rem;
+    margin-top: 6.5rem;
     margin-right: 3rem;
 }
 
@@ -26,6 +27,7 @@ form {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 3rem;
 }
 
 form label {
@@ -33,17 +35,43 @@ form label {
     font-weight: 600;
 }
 
-input {
+.input {
     width: 80%;
-    border: .5px solid black;
-    padding-bottom: 2rem;
+    background-color: #C4C4C4;
+    border-color:#C4C4C4;
+    border-radius: 5px;
+    padding:.75rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13pt;
+    box-sizing: border-box;
 }
 
 form textarea {
     width: 80%;
+    background-color: #C4C4C4;
+    border-color:#C4C4C4;
+    border-radius: 5px;
+    padding:.75rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13pt;
+    box-sizing: border-box;
+    padding-bottom: 4rem;
 }
 
 .submit {
     width: 50%;
+    background-color: #C4C4C4;
+    border-color:#C4C4C4;
+    border-radius: 5px;
     margin-top: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14pt;
+    box-shadow: none;
 }
