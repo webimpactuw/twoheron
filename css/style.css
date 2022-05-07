@@ -116,6 +116,8 @@ footer {
     position: static;
     top: 0px;
     margin: 0 6rem;
+    margin-bottom: 3rem;
+    padding: 4rem;
 }
 
 .triangle-topleft {
@@ -145,6 +147,6 @@ footer {
 
   hr.solid {
     background-color: black;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    border-top: .5px solid black;
+    border-bottom: .5px solid black;
   }

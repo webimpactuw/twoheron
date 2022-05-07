@@ -1,0 +1,49 @@
+@import "style.css";
+
+.flexbox {
+    background-color: white;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.flex-text {
+    width:50%;
+    flex:1 1 1;
+    padding: 5rem;
+}
+
+.flex-form {
+    width:50%;
+    flex:1 1 1;
+    margin-top: 6rem;
+    margin-right: 3rem;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form label {
+    font-style: normal;
+    font-weight: 600;
+}
+
+input {
+    width: 80%;
+    border: .5px solid black;
+    padding-bottom: 2rem;
+}
+
+form textarea {
+    width: 80%;
+}
+
+.submit {
+    width: 50%;
+    margin-top: 1rem;
+}
