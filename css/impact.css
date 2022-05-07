@@ -26,8 +26,68 @@
     margin: 0 3rem;
 }
 
-.carousel {
+.card img {
+    border-radius: 20px;
+    max-width: 160px;
+    max-height: 160px;
+  }
+
+  .flex-item {
+    padding: 1em;
+  }
+  
+  .card-container {
     display: flex;
-    margin: 0 3rem;
-    margin-top: 0 5rem;
+    width: 90vw;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+
+  .card-container::-webkit-scrollbar {
+    display: none;
+ }
+
+  .card div:nth-child(2) {
+    background-color: 	#e8f2e4;
+  }
+
+  .card-img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 20px;
+      object-fit: contain;
+  }
+  
+  .card {
+    display: flex;
+    flex-basis: 20%;
+    flex-shrink: 0;
+    height: 300px;
+    width: 200px;
+    background-color: white;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(81,104,71, 0.50), 0 1px 3px rgba(81,104,71, 0.50);
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .left,.right {
+   border: none;
+   background-color: transparent;
+   cursor: pointer;
+   color: brown;
+   font-size: 5rem;
+   overflow: hidden;
+   z-index: 100;
 }
+  
+  .card p {
+    padding: 0rem 1rem;
+    font-size: 22px;
+  }
