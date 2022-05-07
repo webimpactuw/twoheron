@@ -66,8 +66,7 @@ nav {
 }
 
 nav ul {
-    display: inline;
-    text-align: left;
+    list-style-type: none;
 }
 
 #big-marg {
@@ -75,25 +74,24 @@ nav ul {
 }
 
 nav li {
-    display: inline;
-    padding: 3rem 3rem;
+    float: left;
+    padding: 0rem 1rem;
 }
 
+nav a {
+    display: block;
+    padding: 0 1rem;
+    text-decoration: none;
+    color: black;
+}
 
 nav .header-left {
     text-align: left;
 }
 
 nav .header-right {
-    text-align: right;
+    float: right;
     padding-right: 6rem;
-}
-
-
-nav a {
-    padding: 0 1rem;
-    text-decoration: none;
-    color: black;
 }
 
 .test {
@@ -143,4 +141,10 @@ footer {
     display: inline-block;
     font-size: 16px;
     border-radius: 10px;
+  }
+
+  hr.solid {
+    background-color: black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
   }
