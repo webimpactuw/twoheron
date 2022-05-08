@@ -36,18 +36,13 @@
     transition: all .25s ease-in-out;
 }
       
-p {
-    margin: 5px 0;
-    padding: 0;
-    text-align: center;
-    font-style: italic;
-}
 
 .flexbox {
     display:flex;
     justify-content: center;
     align-items: flex-start;
     padding-top: 4rem;
+    background-color: white;
 }
 
 .flexbox .image {
