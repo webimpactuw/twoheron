@@ -1,5 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&family=Nanum+Gothic:wght@400;800&family=Source+Sans+Pro:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&family=Cuprum&family=Nanum+Gothic:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import "icofont/icofont.min.css";
 
 
@@ -67,9 +69,10 @@ nav {
     align-items: center;
     flex-wrap: wrap;
     padding:1rem 4rem;
-    background-color: #D6A99A61;
     color: black; 
     z-index: 100;
+    background-color: white;
+    border-bottom: 1px solid #8C8C8C;
 }
 
 .image-title {
@@ -81,7 +84,13 @@ nav {
 .image-title img {
     max-height: 50px;
     max-width: auto;
-    padding:0 2rem;
+}
+
+.THF {
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;   
+    font-size: 20pt;
 }
 
 .list {
@@ -107,17 +116,16 @@ nav .header-right {
     float: right;
 }
 
-
 footer {
     position:static;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #D6A99A59;
     color: black;
     padding: 1rem 3rem;
     padding-right: 4rem;
     font-size: 12pt;
+    border-top: 1px solid #8C8C8C;
   }
 
  .icofont-facebook {
