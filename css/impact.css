@@ -31,6 +31,46 @@
     flex-grow: 1;
 }
 
+#slider{
+  height: 500px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.container{
+  width: 1600 px;
+  margin:auto;
+}
+
+.subcontainer{
+  width: 85%;
+  margin:auto;
+}
+
+.controller{
+  display:flex;
+  justify-content: space-between;
+}
+
+#controls{
+  color: black;
+}
+
+.previous .next{
+  padding: 2px;
+  width: 30px;
+  border-radius: 50%;
+  transition: 0.7s ease-in-out;
+}
+
+@media(max-width:1600px){
+  .container{
+    width: 100%
+  }
+}
+
 .card img {
     border-radius: 20px;
     max-width: 160px;
