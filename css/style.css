@@ -71,6 +71,7 @@ nav {
     padding:1rem 4rem;
     color: black; 
     z-index: 100;
+    background-color: white;
     border-bottom: 1px solid #8C8C8C;
 }
 
@@ -120,11 +121,11 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #D6A99A59;
     color: black;
     padding: 1rem 3rem;
     padding-right: 4rem;
     font-size: 12pt;
+    border-top: 1px solid #8C8C8C;
   }
 
  .icofont-facebook {
