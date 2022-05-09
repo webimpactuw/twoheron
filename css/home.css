@@ -1,5 +1,12 @@
 @import "style.css";
 
+.welcome {
+    font-family: 'Roboto';
+    font-weight:300;
+    font-size:10pt;
+    white-space: pre;
+}
+
 .right-header {
     text-align: right;
 }
@@ -46,8 +53,9 @@
     left:50%;
 }
 
-.fa-quote-left{
-    color:black;
+.icofont-quote-left {
+    color:#EA966E;
+    font-size:18pt;
 }
 
 #quote {
