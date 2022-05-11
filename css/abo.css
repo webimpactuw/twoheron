@@ -1,5 +1,6 @@
 @import "style.css";
 
+
 .image1 {
     width:  322px;
     height: 370px;
@@ -56,6 +57,9 @@
     align-items: flex-start;
     padding-top: 4rem;
     background-color: white;
+}
+.flexbox h5{
+    text-align: left;
 }
 
 .flexbox .image {
