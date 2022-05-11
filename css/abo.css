@@ -13,23 +13,34 @@
 }
 
 .grid-container {
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
+    grid-column-gap: 10rem;
+    grid-template-columns: 12.5rem 12.5rem;
+}
+
+.grid-container1 {
     display: grid;
+    justify-content: center;
+    align-items: center;
     grid-column-gap: 10rem;
     grid-template-columns: 12.5rem 12.5rem 12.5rem;
 }
 
+
 .grid-item {
-    align-items: center;
     width: 10rem;
     height: 10rem;
     object-fit: cover;
     border-radius: 5px;
     transition: all .25s ease-in-out;
 }
-    
+
+.grid-container1 h4,h5 {
+    text-align: center;
+}
+
 .grid-container h4,h5 {
     text-align: center;
 }
