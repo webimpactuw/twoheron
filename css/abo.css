@@ -6,6 +6,37 @@
     height: 370px;
 }
 
+.demo-wrap {
+    position: relative;
+    padding-bottom: 13rem;
+    padding-top: 3rem;
+}
+
+.demo-wrap:before {
+  content: ' ';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1.0;
+  background-image: linear-gradient(to right, rgb(255, 255, 255, 1), rgb(255, 255, 255, 0) 60%, rgb(255, 255, 255, 0)), url("images/abo-background.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 80%;
+  z-index: -100;
+}
+
+.triangle-topleft {
+    position: absolute;
+    height: 1500px;
+    width: 800px;
+    clip-path: polygon(0% 0, 100% 0%, 0% 100%);
+    background-color: white;
+    z-index: -50;
+    overflow:clip;
+}
+
 .heading2 {
     display: flex;
     justify-content: center;

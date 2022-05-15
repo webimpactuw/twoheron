@@ -144,8 +144,7 @@ footer {
 
 .title {
     position: static;
-    top: 0px;
-    margin-top: 4rem;
+    padding-top: 8rem;
     margin-bottom: 6rem;
     margin-left: 6rem;
     padding: 4rem;
