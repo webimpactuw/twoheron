@@ -17,8 +17,8 @@
 }
 
 .demo-wrap {
+    margin-top: 2rem;
     position: relative;
-    padding-top: 7rem;
     padding-bottom: 13rem;
 }
 
@@ -58,9 +58,11 @@
 
 .flex1 .item h3 {
     text-align: center;
+    padding: 1rem 0;
 }
 
 .flex1 .item p {
+    padding: 1rem 0;
     text-align: left;
 }
 
@@ -112,14 +114,20 @@
 .flex2 .item {
     width:55%;
     flex: 1 1 1;
-    height: 30rem;
-    text-align: left;
     margin-left: 6rem;
+    margin-bottom: 2rem;
+}
+
+.flex2 .item h2{
+    text-align: left;
 }
 
 .flex2 .item .text {
     width:80%;
+    padding: 1rem 0;
+    text-align: left;
 }
+
 
 .slider {
     overflow: hidden;
