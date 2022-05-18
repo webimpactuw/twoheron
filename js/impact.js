@@ -1,3 +1,5 @@
+import { tns } from "./node_modules/tiny-slider/src/tiny-slider"
+
 let slider = tns({
    container: ".my-slider", // What's the slider class name
    "slideBy": 1, // How many slides are we skipping per press?
