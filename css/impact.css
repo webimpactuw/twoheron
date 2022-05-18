@@ -1,4 +1,5 @@
 @import "style.css";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css");
 
 .environment {
   background-color: white;

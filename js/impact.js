@@ -1,3 +1,5 @@
+import { tns } from "./node_modules/tiny-slider/src/tiny-slider"
+
 let slider = tns({
    container : ".my-slider", // What's the slider class name
    items:2,
