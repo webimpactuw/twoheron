@@ -126,20 +126,15 @@ footer {
     padding-right: 4rem;
     font-size: 12pt;
     border-top: 1px solid #8C8C8C;
+    display: flex;
+    justify-content: space-between;
   }
 
- .icofont-facebook {
+ .icofont-facebook, .icofont-email{
     color: black;
     padding-left:3.5rem;
     padding-right:3.5rem;
-    float: right;
-}
-
-.icofont-email {
-    color: black;
-    padding-left:3.5rem;
-    padding-right:3.5rem;
-    float: right;
+    text-decoration: none;
 }
 
 .title {

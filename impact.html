@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/impact.css">
-    <script src="js/impact.js"></script>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylehseet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
     <title>Our Impact</title>
 </head>
 
@@ -65,26 +65,19 @@
         </div>
     </div>
     
-    <section id="slider">
+    <section id="diff-id">
         <div class = "container">
             <div class="subcontainer">
-                <div class="slider-wrapper">
+                <div class="swiper mySwiper slider-wrapper">
                     <div class="controller">
                         <div>
-                            <h3>Grantee 1</h3>
-                        </div>
-                        <div id="controls">
-                            <button class="previous">
-
-                            </button>
-                            <button class="next">
-
-                            </button>
+                            <h3>Grantees</h3>
                         </div>
                     </div>
-                    <div class="my-slider">
-                        <div>
-                            <div class="slide">
+                    <br>
+                    <div class="swiper-wrapper my-slider">
+                        <div class="swiper-slide">
+                            <div>
                                 <div class="slide-img img-1">
 
                                 </div>
@@ -95,8 +88,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div>
-                            <div class="slide">
+                        <div class="swiper-slide">
+                            <div>
                                 <div class="slide-img img-2">
 
                                 </div>
@@ -107,8 +100,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div>
-                            <div class="slide">
+                        <div class="swiper-slide">
+                            <div>
                                 <div class="slide-img img-3">
 
                                 </div>
@@ -119,8 +112,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div>
-                            <div class="slide">
+                        <div class="swiper-slide">
+                            <div>
                                 <div class="slide-img img-4">
 
                                 </div>
@@ -132,57 +125,38 @@
                             </div>
                         </div>
                     </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class="flex-item">
-        <div class="card-container">
-            <button class="left">
-            </button>
-            <div class="card">
-                <div class="card-img">
-                    <img src="css/images/aclu.png" alt="aclu logo">
-                </div>
-                <div>
-                    <p>ACLU</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-img">
-                    <img src="css/images/geeking_out.png" alt="Geeking out kids of color logo">
-                </div>
-                <div>
-                    <p>Geeking out Kids of Color</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-img">
-                    <img src="css/images/nrdc.png" alt="NRDC logo">
-                </div>
-                <div>
-                    <p>National Resources Defense Council</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-img">
-                    <img src="css/images/sr3.jpg" alt="SR3 logo">
-                </div>
-                <div>
-                    <p>SR3, Sealife Response, Rehab, & Research</p>
-                </div>
-            </div>
-            <button class="right"> > </button>
         </div>
     </section>
 
     <footer>
         <p text-align="left">&copy; 2022 Two Heron Foundation <a href=""><i class="icofont-email"></i></a> <a href=""><i class="icofont-facebook"></i></a></p>
     </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
 </body>
 
 </html>

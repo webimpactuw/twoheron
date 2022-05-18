@@ -1,12 +1,15 @@
 let slider = tns({
-   container: ".my-slider", // What's the slider class name
-   "slideBy": 1, // How many slides are we skipping per press?
-   "speed": 400, //speed of slide
-   "nav" : false,  // no dots
-   controlsContainer: "#controls", //We want to use our controls rather than their
+   container : ".my-slider", // What's the slider class name
+   items:2,
+   axis:"horizontal",
+   slideBy: 1, // How many slides are we skipping per press?
+   speed: 400, //speed of slide
+   nav : false,  // no dots
+   controlsContainer: ".controls", //We want to use our controls rather than their
    prevButton: ".previous", //set buttons
    nextButton: ".next",
-   responsive: { //images to display based on window size
+   loop:true,
+   /*responsive: { //images to display based on window size
       1600: {
          items: 4, //# images
          gutter: 20 //padding between images
@@ -22,5 +25,5 @@ let slider = tns({
       480: {
          items: 1,
       }
-   }
+   }*/
 });
