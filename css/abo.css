@@ -48,22 +48,22 @@
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-column-gap: 10rem;
-    grid-template-columns: 12.5rem 12.5rem;
+    grid-column-gap: auto;
+    grid-template-columns: auto auto;
 }
 
 .grid-container1 {
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-column-gap: 10rem;
-    grid-template-columns: 12.5rem 12.5rem 12.5rem;
+    grid-column-gap: auto;
+    grid-template-columns: auto auto auto;
 }
 
 
 .grid-item {
-    width: 10rem;
-    height: 10rem;
+    width: 10.5rem;
+    height: 13rem;
     object-fit: cover;
     border-radius: 5px;
     transition: all .25s ease-in-out;
@@ -121,8 +121,8 @@
     margin: 16px;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
     background: linear-gradient(69deg, #D6A99A8F,#EEE8E6);
-    width: 200px;
-    height: 250px;
+    width: 210px;
+    height: 300px;
     border-width: 5px;
 }
 
