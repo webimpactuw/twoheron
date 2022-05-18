@@ -78,6 +78,10 @@
   transition:0.5s;
 }
 
+.image img {
+  width: 80%;
+}
+
 .slide-img:hover {
   box-shadow: 0 0 0 200px rgba(0,0,0,0.9) inset;
 }
@@ -101,11 +105,11 @@
 }
 
 .img-2{
-  background-image:url("images/geeking_out.png");
+  background-image:url("images/devcolor.jpeg");
 }
 
 .img-3{
-  background-image:url("images/aclu.png");
+  background-image:url("images/geek.png");
 }
 
 .img-4{
@@ -113,11 +117,11 @@
 }
 
 .img-5{
-
+  background-image:url("images/climateSolutions.png");
 }
 
 .img-6 {
-
+  background-image:url("images/wolfhollow-1.png");
 }
 
 @media(max-width:1600px){
