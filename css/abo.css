@@ -120,14 +120,15 @@
     padding: 20px;
     margin: 16px;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
-    background: linear-gradient(69deg, #D6A99A8F,#EEE8E6);
+    background: rgba(236, 236, 236, 0.848);
     width: 210px;
     height: 300px;
     border-width: 5px;
 }
 
-
-
+.card img{
+    padding: 1rem;
+}
 
 .card:hover img {
     transform: scale(1.05);

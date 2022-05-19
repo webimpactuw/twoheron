@@ -1,5 +1,4 @@
 @import "style.css";
-@import url("https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css");
 
 .environment {
   background-color: white;
@@ -55,7 +54,7 @@
 }
 
 .subcontainer{
-  width: 85%;
+  width: 90%;
   margin:auto;
   align-items:row;
 }
@@ -79,6 +78,7 @@
   margin-bottom: 1rem;
 }
 
+
 .slide-container {
   cursor:pointer;
   display:flex;
@@ -94,6 +94,7 @@
   height: 350px;
   border-width: 5px;
   text-align:center;
+  transition:0.5s;
 }
 
 .slide-img{
@@ -143,6 +144,27 @@
   .container{
     width: 100%
   }
+}
+
+.more-info {
+  opacity: 0;
+  position: absolute;
+  top: center;
+  left: center;
+  color: white;
+  transform:scale(0);
+  transition: 0.5s;
+}
+
+
+.slide-img:hover {
+  box-shadow: 0 0 0 200px rgba(0,0,0,0.9) inset;
+  z-index: 0;
+}
+
+.slide-img:hover .more-info{
+  opacity:1;
+  transform:scale(1);
 }
 
 .card img {
