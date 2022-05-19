@@ -13,6 +13,7 @@
     text-align: left;
     inline-size: 30%;
     flex-grow: 1;
+    line-height: 2;
 }
 
 .environment .image{
@@ -30,6 +31,15 @@
     text-align: center;
     inline-size: 30%;
     flex-grow: 1;
+    line-height: 2;
+}
+
+.h2{
+  margin-bottom: 1rem;
+}
+
+.h4{
+  margin-top: 2rem;
 }
 
 #diff-id{
@@ -47,6 +57,7 @@
 .subcontainer{
   width: 85%;
   margin:auto;
+  align-items:row;
 }
 
 .swiper-slide {
@@ -56,19 +67,39 @@
   flex-direction: column;
 }
 
-.swiper-button-next{
-  padding-bottom: 5rem;
-  padding-left: 1.75rem;
+.item-container{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+  border: 1px black;
 }
 
-.swiper-button-prev{
-  padding-bottom: 5rem;
-  padding-right: 1.75rem;
+.swiper-wrapper {
+  margin-bottom: 1rem;
 }
 
-.slide-img {
+.slide-container {
+  cursor:pointer;
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  transition:0.5s;
+  padding: 2rem;
+  margin: auto;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+  background: rgba(236, 236, 236, 0.848);
+  width: 95%;
+  height: 350px;
+  border-width: 5px;
+  text-align:center;
+}
+
+.slide-img{
+  flex: 1 1 0px;
   width: 80%;
-  height: 300px;
+  height: 200px;
   border: 1px solid white;
   background-position:center;
   background-size:cover;
@@ -79,30 +110,9 @@
   transition:0.5s;
 }
 
-.image img {
-  width: 80%;
-}
-
-.slide-img:hover {
-  box-shadow: 0 0 0 200px rgba(0,0,0,0.9) inset;
-}
-
-.slide-img a{
-  text-decoration:none;
-  transform: scale(0);
-  transition: 0.8s;
-  font-size: 1.5rem;
-  color: white;
-  opacity: 0;
-}
-
-.slide-img:hover a{
-  opacity: 1;
-  transform:scale(1);
-}
 
 .img-1{
-  background-image:url("images/sr3.jpg");
+  background-image:url("images/aclu.png");
 }
 
 .img-2{
@@ -123,6 +133,10 @@
 
 .img-6 {
   background-image:url("images/wolfhollow-1.png");
+}
+
+.img-7 {
+  background-image:url("images/sr3.jpg");
 }
 
 @media(max-width:1600px){
