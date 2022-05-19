@@ -149,7 +149,7 @@
 }
 
 .img-10{
-  background-image:url("images/aclu.png");
+  background-image:url("images/ibr.jpg");
 }
 
 .img-11 {
@@ -165,11 +165,11 @@
 }
 
 .img-14{
-  background-image:url("images/aclu.png");
+  background-image:url("images/awis.jpg");
 }
 
 .img-15{
-  background-image:url("images/aclu.png");
+  background-image:url("images/kcsarc.jpg");
 }
 
 @media(max-width:1600px){
@@ -181,14 +181,16 @@
 .more-info {
   opacity: 0;
   position: absolute;
-  top: center;
-  left: center;
-  color: white;
   transform:scale(0);
   transition: 0.5s;
   width:50%;
   height:50%;
   overflow:overlay;
+}
+
+.more-info a {
+  text-decoration: none;
+  color: white;
 }
 
 .slide-text {
