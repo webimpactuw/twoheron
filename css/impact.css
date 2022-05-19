@@ -113,7 +113,7 @@
 
 
 .img-1{
-  background-image:url("images/aclu.png");
+  background-image:url("images/wolfhollow-1.png");
 }
 
 .img-2{
@@ -133,7 +133,7 @@
 }
 
 .img-6 {
-  background-image:url("images/wolfhollow-1.png");
+  background-image:url("images/aclu.png");
 }
 
 .img-7 {
@@ -154,8 +154,17 @@
   color: white;
   transform:scale(0);
   transition: 0.5s;
+  width:50%;
+  height:50%;
+  overflow:overlay;
 }
 
+.slide-text {
+  align-items:center;
+  position: absolute;
+  justify-content: center;
+
+}
 
 .slide-img:hover {
   box-shadow: 0 0 0 200px rgba(0,0,0,0.9) inset;
