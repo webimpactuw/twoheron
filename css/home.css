@@ -20,6 +20,7 @@
     margin-top: 2rem;
     position: relative;
     padding-bottom: 13rem;
+    margin-bottom: 4rem;
 }
 
 .demo-wrap:before {
@@ -52,22 +53,22 @@
 .flex1 .item {
     inline-size: 35%;
     flex-grow: 1;
-    margin-right: 6rem;
-    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-left: 8rem;
 }
 
-.flex1 .item h3 {
-    text-align: center;
-    padding: 1rem 0;
+.flex1 .item h2 {
+    padding: 1rem 1rem;
 }
 
 .flex1 .item p {
-    padding: 1rem 0;
+    padding: 1rem 1.25rem;
     text-align: left;
 }
 
 .flex1 .item .button {
-    float: center;
+    margin-left: 1.25rem;
+    margin-top: 1rem;
 }
 
 .quote{
@@ -95,10 +96,11 @@
     justify-content: center;
     align-items: center;
     background-color: white;
+    margin-bottom: 2rem;
 }
 
 .flex2 .image {
-    width:45%;
+    width:55%;
     flex: 1 1 1;
     margin-right: 4rem;
 }
@@ -112,19 +114,20 @@
 }
 
 .flex2 .item {
-    width:55%;
+    width:45%;
     flex: 1 1 1;
-    margin-left: 6rem;
+    margin-left: 8rem;
     margin-bottom: 2rem;
 }
 
 .flex2 .item h2{
+    padding: 1rem;
     text-align: left;
 }
 
 .flex2 .item .text {
     width:80%;
-    padding: 1rem 0;
+    padding: 1rem 1rem;
     text-align: left;
 }
 
