@@ -144,6 +144,7 @@ footer a {
 .title {
     position: static;
     padding-top: 8rem;
+    margin-top: 2rem;
     margin-bottom: 6rem;
     margin-left: 6rem;
     padding: 4rem;
@@ -163,7 +164,7 @@ footer a {
 
 
 .button {
-    background-color: #8C8C8C; 
+    background-color: #EA966E; 
     border: none;
     color: white;
     padding: 11px 15px;
@@ -180,4 +181,8 @@ footer a {
     border-bottom: .5px solid black;
   }
 
+  .bordered {
+    text-align: left;
+    border-left: 4px solid #EA966E;
+}
 
