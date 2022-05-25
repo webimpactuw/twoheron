@@ -1,11 +1,5 @@
 @import "style.css";
 
-
-.image1 {
-    width:  322px;
-    height: 370px;
-}
-
 .demo-wrap {
     position: relative;
     padding-bottom: 13rem;
@@ -13,49 +7,50 @@
 }
 
 .demo-wrap:before {
-  content: ' ';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 1.0;
-  background-image: linear-gradient(to right, rgb(255, 255, 255, 1), rgb(255, 255, 255, 0) 60%, rgb(255, 255, 255, 0)), url("images/abo-background.png");
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: 80%;
-  z-index: -100;
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1.0;
+    background-image: linear-gradient(to right, rgb(255, 255, 255, 1), rgb(255, 255, 255, 0) 60%, rgb(255, 255, 255, 0)), url("images/abo-background.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: auto;
+    z-index: -100;
 }
 
 .triangle-topleft {
     position: absolute;
-    height: 1500px;
-    width: 800px;
+    height: 100%;
+    width: 100%;
     clip-path: polygon(0% 0, 100% 0%, 0% 100%);
     background-color: white;
     z-index: -50;
-    overflow:clip;
+    overflow: clip;
 }
 
 .heading2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     margin: 40px;
 }
 
 .grid-container {
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
-    grid-column-gap: auto;
-    grid-template-columns: auto auto;
+    flex-direction: column;
 }
 
 .grid-container1 {
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     grid-column-gap: auto;
     grid-template-columns: auto auto auto;
 }
@@ -69,41 +64,47 @@
     transition: all .25s ease-in-out;
 }
 
-.grid-container1 h4,h5 {
+.grid-container1 h4,
+h5 {
     text-align: center;
 }
 
-.grid-container h4,h5 {
+.grid-container h4,
+h5 {
     text-align: center;
 }
 
-.row-border{
+.row-border {
     border-top: 3px solid gray;
 }
 
 
 .flexbox {
-    display:flex;
+    display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    flex-direction: column;
     padding-top: 4rem;
     padding-bottom: 4rem;
     background-color: white;
 }
 
-.flexbox h5{
-    text-align: left;
+.flexbox h5 {
+    text-align: center;
 }
 
 .flexbox .image {
-    width:30%;
+    width: 100%;
     flex: 1 1 1;
-    margin-left: 6rem;
+    text-align: center;
+}
 
+.flexbox .image img {
+    max-width: 350px;
 }
 
 .flexbox .item {
-    inline-size: 60%;
+    inline-size: 80%;
     flex-grow: 1;
     padding-left: 4rem;
     margin-top: 3rem;
@@ -119,17 +120,86 @@
 .card {
     padding: 20px;
     margin: 16px;
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
     background: rgba(236, 236, 236, 0.848);
     width: 210px;
     height: 300px;
     border-width: 5px;
 }
 
-.card img{
+.card img {
     padding: 1rem;
 }
 
 .card:hover img {
     transform: scale(1.05);
+}
+
+@media(min-width: 598px) {
+    .triangle-topleft {
+        height: 1250px;
+        width: 80%
+    }
+}
+
+@media (min-width: 768px) {
+    .triangle-topleft {
+        height: 1250px;
+        width: 65%
+    }
+
+    .grid-container {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-column-gap: auto;
+        grid-template-columns: auto auto;
+    }
+
+    .grid-container1 {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        grid-column-gap: auto;
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .triangle-topleft {
+        height: 1250px;
+        width: 58%;
+    }
+
+    .flexbox {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .flexbox h5 {
+        text-align: left;
+    }
+
+    .flexbox .image {
+        width: 30%;
+        flex: 1 1 1;
+        margin-left: 2rem;
+    }
+
+    .flexbox .image img {
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .triangle-topleft {
+        height: 1500px;
+    }
+
+    .demo-wrap:before {
+        background-position: right bottom;
+        background-size: auto;
+    }
 }

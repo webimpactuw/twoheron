@@ -7,10 +7,6 @@
     white-space: pre;
 }
 
-.right-header {
-    text-align: right;
-}
-
 .parent img {
     padding-top: 50px;
     padding-left: 50px;
@@ -19,8 +15,7 @@
 .demo-wrap {
     margin-top: 2rem;
     position: relative;
-    padding-bottom: 13rem;
-    margin-bottom: 4rem;
+    padding-bottom: 9rem;
 }
 
 .demo-wrap:before {
@@ -40,21 +35,25 @@
 
 .flex1 {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
-.flex1 .image {
-    flex-grow: 2;
+.flex1 .parent {
+    flex-grow: 1;
+    flex-shrink: 1;
     margin-top: 3rem;
-    margin-left: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.flex1 .parent img {
+    max-width: 400px;
 }
 
 .flex1 .item {
-    inline-size: 35%;
+    inline-size: 65%;
     flex-grow: 1;
-    margin-right: 4rem;
-    margin-left: 8rem;
 }
 
 .flex1 .item h2 {
@@ -83,11 +82,11 @@
 
 .icofont-quote-left {
     color:#EA966E;
-    font-size:18pt;
+    font-size:14pt;
 }
 
 #quote {
-    margin: 12rem 0;
+    margin: 6rem 0;
     text-align: center;
 }
 
@@ -95,14 +94,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column-reverse;
     background-color: white;
     margin-bottom: 2rem;
 }
 
 .flex2 .image {
-    width:55%;
+    width:65%;
     flex: 1 1 1;
-    margin-right: 4rem;
 }
 
 .flex2 .image img {
@@ -114,9 +113,8 @@
 }
 
 .flex2 .item {
-    width:45%;
+    width:65%;
     flex: 1 1 1;
-    margin-left: 8rem;
     margin-bottom: 2rem;
 }
 
@@ -126,16 +124,14 @@
 }
 
 .flex2 .item .text {
-    width:80%;
     padding: 1rem 1rem;
-    text-align: left;
+    text-align: center;
 }
 
 
 .slider {
     overflow: hidden;
     padding-bottom: 4rem;
-    margin-right: 2rem;
 }
 
 .slider figure {
@@ -176,4 +172,120 @@
         left: -400%;
     }
 
+}
+
+@media (min-width: 598px) {
+    .flex1 .parent img {
+        max-width: 525px;
+        padding-bottom: 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .flex1 .parent img {
+        max-width: 650px;
+    }
+}
+
+
+@media (min-width:992px) {
+    .parent img {
+        padding-top: 50px;
+        padding-left: 50px;
+    }
+
+    .demo-wrap {
+        margin-top: 2rem;
+        padding-bottom: 10rem;
+        margin-bottom: 3rem;
+    }
+    
+    .flex1 {
+        flex-direction: row;
+    }
+
+    .flex1 .parent {
+        flex-grow: 2;
+        margin-top: 3rem;
+        margin-bottom: 0rem;
+        margin-left: 2.5rem;
+    }
+
+    .flex1 .parent img {
+        max-width: 535px;
+        padding-bottom: 0;
+    }
+
+    .flex1 .item {
+        inline-size: 35%;
+        flex-grow: 1;
+        margin-right: 2.5rem;
+        margin-left: 5rem;
+    }
+
+    #quote {
+        margin: 7rem 0;
+    }
+
+    .icofont-quote-left {
+        font-size:18pt;
+    }
+
+    .flex2 {
+        flex-direction: row;
+    }
+
+    .flex2 .image {
+        width:55%;
+        flex: 1 1 1;
+        margin-right: 2.5rem;
+    }
+
+    .flex2 .item {
+        width:45%;
+        flex: 1 1 1;
+        margin-left: 4rem;
+        margin-bottom: 2rem;
+        text-align: left;
+    }
+
+    .flex2 .item .text {
+        width:80%;
+        padding: 1rem 1rem;
+        text-align: left;
+    }
+
+    .slider {
+        margin-right: 2rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .demo-wrap {
+        margin-top: 2rem;
+        padding-bottom: 13rem;
+        margin-bottom: 4rem;
+    }
+
+    .flex1 .parent {
+        flex-grow: 2;
+        margin-top: 3rem;
+        margin-bottom: 0rem;
+        margin-left: 4rem;
+    }
+
+    .flex1 .parent img {
+        max-width: 100%;
+    }
+
+    .flex1 .item {
+        inline-size: 35%;
+        flex-grow: 1;
+        margin-right: 4rem;
+        margin-left: 7rem;
+    }
+
+    #quote {
+        margin: 12rem 0;
+    }
 }

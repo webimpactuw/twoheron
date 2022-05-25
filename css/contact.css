@@ -6,16 +6,16 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    flex-direction: row;
+    flex-direction: column;
     padding-bottom: 4rem;
 }
 
 .flex-text {
-    width:40%;
+    width:90%;
     flex:1 1 1;
-    padding: 4rem;
-    margin-top: 4rem;
-    margin-right: 3rem;
+    padding: 2rem;
+    margin-top: 2rem;
+    text-align: center;
 }
 
 .flex-text h2 {
@@ -27,10 +27,11 @@
 }
 
 .flex-form {
-    width:60%;
+    width:90%;
     flex:1 1 1;
     margin-top: 6.5rem;
     margin-left: 3rem;
+    margin-right: 3rem;
 }
 
 form {
@@ -108,4 +109,24 @@ form textarea {
     padding-right: 1.4rem;
     border-radius: .4rem;
     float: left;
+}
+
+@media (min-width: 992px) {
+    .flexbox {
+        flex-direction: row;
+    }
+
+    .flex-form{
+        width: 60%;
+        margin-right: 0;
+    }
+
+    .flex-text {
+        width:40%;
+        flex:1 1 1;
+        padding: 4rem;
+        margin-top: 4rem;
+        margin-right: 3rem;
+        text-align: left;
+    }
 }
